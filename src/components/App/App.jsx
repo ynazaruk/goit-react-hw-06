@@ -1,14 +1,16 @@
+import React from 'react';
 import ContactForm from '../ContactForm/ContactForm';
 import ContactList from '../ContactList/ContactList';
-import SearchBox from '../SearchBox/SearchBox';
+import Searchbox from '../SearchBox/SearchBox';
 
-export default function App() {
-  return (
+const App = () => (
   <div>
     <h1>Phonebook</h1>
     <ContactForm />
-    <SearchBox />
+    <h2>Contacts</h2>
+    <Searchbox />
     <ContactList />
   </div>
-  );
-};
+);
+
+export default App;
